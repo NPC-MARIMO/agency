@@ -1,0 +1,117 @@
+.proj {
+    margin-top: 100px;
+
+}
+
+.proj .one {
+    width: 100%;
+}
+
+.proj .one h1 {
+    margin-bottom: 100px;
+    font-size: 80px;
+
+}
+
+.proj .two {
+    display: flex;
+    flex-direction: column;
+    gap: 100vh;
+}
+
+.proj .two .itm {
+    display: flex;
+    background: #0a0a0a;
+    overflow: hidden;
+    gap:5%;
+}
+
+.proj .two .itm .l {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.proj .two .itm .l h2 {
+    font-weight: normal;
+}
+
+.proj .two .itm .l span {
+    color: #777;
+}
+
+.proj .two .itm .l .tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.proj .two .itm .l .tech span {
+    cursor: pointer;
+    font-size: 12px;
+    padding: 10px;
+    border: 1px solid #dadada;
+}
+
+.proj .two .itm .l p {
+    margin-top: 15px;
+}
+
+.proj .two .itm .c {
+    overflow: hidden;
+    height: 400px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.proj .two .itm .c img{
+    scale: 1.1;
+    width: 100%;
+    object-fit: cover;
+    transition: all 1s ease;
+}
+
+.proj .two .itm .c img:hover{
+    scale: 1;
+}
+.proj .two .r {
+    width: 20%;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+.proj .two .r div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.proj .two .r div button{
+padding: 15px 20px;
+background: transparent;
+cursor: pointer;
+outline: none;
+border: 1px solid white;
+color: white;
+transition: all 1.3s ease;
+}
+.proj .two .r div button:hover{
+    border-radius: 500px;
+}
+
+.proj .two .r div button:nth-child(2){
+    background: white;
+    color: #000;
+    font-weight: 700;
+    
+}
