@@ -43,8 +43,12 @@
     /* margin-bottom: 30px; */
     font-size: 13px;
     color: #766;
+ 
 }
-
+.sideb .two span.line{
+    border-right: 1px solid #766;
+    padding-right: 5px;
+}
 .sideb .two button{
     padding: 15px 20px;
     font-size: 18px;

@@ -1,10 +1,10 @@
 import React, { useRef } from 'react'
 import './Sidebar.css'
 import { ArrowUpRight } from 'lucide-react'
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-gsap.registerPlugin(useGSAP)
-export default function Sidebar({ menu }) {
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+
+export default function Sidebar({ menu, setMenu }) {
     const sideRef = useRef();
 
     useGSAP(() => {
@@ -25,36 +25,43 @@ export default function Sidebar({ menu }) {
         }
     }, [menu]);
 
+    if (!menu) return null;
 
-
-    if (!menu) return null
     return (
-        <div ref={sideRef} className='sideb'>
-            <div className='sidecon'>
-                <div className='one' >
+        <div
+            ref={sideRef}
+            className="sideb"
+            onClick={() => setMenu(0)}
+        >
+            <div
+                className="sidecon"
+                onClick={(e) => e.stopPropagation()}
+            >
+                <div className="one">
                     <span>Navigation</span>
                     <ul>
                         <li>Home <ArrowUpRight /></li>
-                        <li>About  <ArrowUpRight /></li>
-                        <li>Project  <ArrowUpRight /></li>
-                        <li>Contact  <ArrowUpRight /></li>
+                        <li>About <ArrowUpRight /></li>
+                        <li>Project <ArrowUpRight /></li>
+                        <li>Contact <ArrowUpRight /></li>
                     </ul>
                 </div>
-                <div className='two' >
+
+                <div className="two">
                     <span>Contact</span>
                     <h2>nexora@xyz.com</h2>
                     <h2>+12 3456789 78</h2>
-                    <button>
-                        Contact Us
-                    </button>
+
+                    <button>Contact Us</button>
+
                     <br />
                     <br />
                     <br />
-                    <span>Legal Notice</span> {"    "}  {"    "}
+
+                    <span className="line">Legal Notice</span>{" "}
                     <span>Privacy Policy</span>
                 </div>
-
             </div>
         </div>
-    )
+    );
 }
