@@ -100,10 +100,10 @@ export default function Footer() {
                 <div className='one2'>
                     <div>
                         <span>Links</span>
-                        <Link className='links'>Home</Link>
-                        <Link className='links'>About</Link>
-                        <Link className='links'>Project</Link>
-                        <Link className='links'>Contact</Link>
+                        <Link to={"/"} className='links'>Home</Link>
+                        <Link to={"/about"} className='links'>About</Link>
+                        <Link to={"/project"} className='links'>Project</Link>
+                        <Link to={"/contact"} className='links'>Contact</Link>
                     </div>
 
                     <div>
