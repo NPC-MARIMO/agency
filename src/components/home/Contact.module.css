@@ -1,7 +1,8 @@
 /* Contact Section Styles */
 .contactSection {
+  margin-top: 24.9vh;
     width: 100%;
-    background-color: #000;
+    background-color: #0a0a0a   ;
     color: #fff;
     padding: 80px 20px;
     position: relative;
