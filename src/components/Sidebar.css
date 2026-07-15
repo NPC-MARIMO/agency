@@ -38,7 +38,10 @@
     /* justify-content: center; */
     gap: 20px;
 }
-
+.sideb .one ul .links{
+    text-decoration: none;
+    color: white;
+}
 .sideb span{
     /* margin-bottom: 30px; */
     font-size: 13px;

@@ -3,6 +3,7 @@ import './Sidebar.css'
 import { ArrowUpRight } from 'lucide-react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import { Link } from 'react-router-dom'
 
 export default function Sidebar({ menu, setMenu }) {
     const sideRef = useRef();
@@ -40,10 +41,49 @@ export default function Sidebar({ menu, setMenu }) {
                 <div className="one">
                     <span>Navigation</span>
                     <ul>
-                        <li>Home <ArrowUpRight /></li>
-                        <li>About <ArrowUpRight /></li>
-                        <li>Project <ArrowUpRight /></li>
-                        <li>Contact <ArrowUpRight /></li>
+                        <li>
+                            <Link
+                                to="/"
+                                className="links"
+                                onClick={() => setMenu(0)}
+                            >
+                                Home
+                            </Link>
+                            <ArrowUpRight />
+                        </li>
+
+                        <li>
+                            <Link
+                                to="/about"
+                                className="links"
+                                onClick={() => setMenu(0)}
+                            >
+                                About
+                            </Link>
+                            <ArrowUpRight />
+                        </li>
+
+                        <li>
+                            <Link
+                                to="/project"
+                                className="links"
+                                onClick={() => setMenu(0)}
+                            >
+                                Project
+                            </Link>
+                            <ArrowUpRight />
+                        </li>
+
+                        <li>
+                            <Link
+                                to="/contact"
+                                className="links"
+                                onClick={() => setMenu(0)}
+                            >
+                                Contact
+                            </Link>
+                            <ArrowUpRight />
+                        </li>
                     </ul>
                 </div>
 
