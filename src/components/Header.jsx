@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import './Header.css'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import Sidebar from './Sidebar'
 gsap.registerPlugin(useGSAP)
 export default function Header() {
 
@@ -45,6 +46,7 @@ export default function Header() {
             <div ref={line1ref} ></div>
             <div ref={line2ref} ></div>
         </div>
+        <Sidebar menu={menu} />
     </div>
   )
 }

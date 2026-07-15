@@ -21,7 +21,7 @@
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-    
+    z-index: 1111111;
 }
 .header .menu div {
     width: 100%;

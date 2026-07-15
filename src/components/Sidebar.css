@@ -1,0 +1,56 @@
+.sideb{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10vh;
+    z-index: 9999;
+    /* background: rgba(255, 255, 255, 0.3);  */
+  
+    backdrop-filter: blur(10px); 
+    
+    padding:0 50px;
+}
+.sidecon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #0a0a0a;
+    width: 350px;
+    height: 90vh;
+    padding: 20px;
+    padding-bottom: 70px
+}
+.sideb .one ul{
+    list-style: none    ;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.sideb .one ul li{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+}
+
+.sideb span{
+    /* margin-bottom: 30px; */
+    font-size: 13px;
+    color: #766;
+}
+
+.sideb .two button{
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 500px;
+    border: none;
+    background: #776;
+    color: #fafafa;
+    margin-top: 30px;
+}
